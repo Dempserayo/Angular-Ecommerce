@@ -1,0 +1,32 @@
+<!-- Sidebar Content -->
+<div class="w-full h-full p-4 flex flex-col gap-4 bg-white">
+    <!-- Header with close button -->
+    <div class="flex justify-between items-center border p-4">
+        <h2 class="text-xl font-bold">Menú</h2>
+        <button (click)="toggleSidebar()" class="p-2 hover:bg-gray-100 ">
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+
+    <!-- Sidebar Links -->
+    <div class="flex flex-col ">
+        <a href="/" class="flex items-center gap-2 p-2 hover:bg-gray-100 rounded-md transition-colors">
+            <mat-icon>home</mat-icon>
+            <span>Inicio</span>
+        </a>
+        <a href="/tienda" class="flex items-center gap-2 p-2 hover:bg-gray-100 rounded-md transition-colors">
+            <mat-icon>store</mat-icon>
+            <span>Tienda</span>
+        </a>
+        <a href="/contacto" class="flex items-center gap-2 p-2 hover:bg-gray-100 rounded-md transition-colors">
+            <mat-icon>contact_support</mat-icon>
+            <span>Contáctanos</span>
+        </a>
+        <a href="/fabricaciones" class="flex items-center gap-2 p-2 hover:bg-gray-100 rounded-md transition-colors">
+            <mat-icon>construction</mat-icon>
+            <span>Fabricaciones</span>
+        </a>
+    </div>
+</div>
+
+
