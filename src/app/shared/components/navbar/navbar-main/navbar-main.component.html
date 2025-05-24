@@ -1,5 +1,5 @@
 <div class="fixed top-0 left-0 w-full h-auto z-50 px-4">
-    <div class="w-full h-20 flex flex-row justify-between items-center p-4 backdrop-blur-xl bg-white/80 shadow-2xl shadow-white border ">
+    <div class="w-full h-20 flex flex-row justify-between items-center p-4 backdrop-blur-xl bg-white/80 shadow-2xl shadow-white border border-gray-200">
         <!-- Logo  -->
         <div class="w-1/3 h-full flex flex-row justify-start items-center gap-2">
             <h1 class="text-xl uppercase font-black leading-tight tracking-tight">
@@ -11,32 +11,32 @@
 
         <!-- Navbar  -->
         <div class="w-1/3 h-full flex flex-row justify-center items-center gap-4">
-            <p class="text-xs uppercase font-black leading-tight tracking-tight hover:text-yellow-600 transition-colors">
+            <p class="text-xs uppercase font-black leading-tight tracking-tight hover:text-yellow-500 transition-all duration-500">
                 <a href="/">
                     Inicio
                 </a>
             </p>
    
-            <p class="text-xs uppercase font-black leading-tight tracking-tight hover:text-yellow-600 transition-colors">
+            <p class="text-xs uppercase font-black leading-tight tracking-tight hover:text-yellow-500 transition-all duration-500">
                 <a href="/">
                     Tienda
                 </a>
             </p>
    
      
-            <p class="text-xs uppercase font-black leading-tight tracking-tight hover:text-yellow-600 transition-colors">
+            <p class="text-xs uppercase font-black leading-tight tracking-tight hover:text-yellow-500 transition-all duration-500">
                 <a href="/">
                     Financiamiento
                 </a>
             </p>
           
-            <p class="text-xs uppercase font-black leading-tight tracking-tight hover:text-yellow-600 transition-colors">
+            <p class="text-xs uppercase font-black leading-tight tracking-tight hover:text-yellow-500 transition-all duration-500">
                 <a href="/">
                     Fabricaciones
                 </a>
             </p>
        
-            <p class="text-xs uppercase font-black leading-tight tracking-tight hover:text-yellow-600 transition-colors">
+            <p class="text-xs uppercase font-black leading-tight tracking-tight hover:text-yellow-500 transition-all duration-500">
                 <a href="/">
                     Preguntas Frecuentes
                 </a>
@@ -45,11 +45,11 @@
 
         <!-- Shopping Icons -->
         <div class="w-1/3 h-full flex flex-row justify-end items-center">
-            <a href="/my-products" class="p-2 hover:bg-blue-500 border border hover:shadow-md hover:shadow-blue-500 hover:text-white hover:border hover:border-black transition-all duration-500">
+            <button (click)="toggleSidebar()" class="p-2 hover:bg-blue-500 border hover:shadow-md hover:shadow-blue-500 hover:text-white hover:border-t hover:border-b hover:border-black transition-all duration-500">
                 <p class="flex flex-row justify-center items-center">
                     <mat-icon>person</mat-icon>
                 </p>
-            </a>
+            </button>
             
             
         
@@ -68,13 +68,13 @@
     </div>
 
     <!-- Sidebar Overlay and Container -->
-    <div *ngIf="isSidebarOpen" class="fixed inset-0 z-50">
+    <div *ngIf="isSidebarOpen" class="fixed inset-0 z-50 ">
         <!-- Dark overlay -->
         <div (click)="toggleSidebar()" class="w-1/2 h-full absolute inset-0 backdrop-blur-sm bg-black/40  transition-all duration-500">
         </div>
         
         <!-- Sidebar -->
-        <div class="absolute top-0 right-0 h-full w-1/2  shadow-2xl shadow-white transform transition-all duration-500">
+        <div class="absolute top-0 right-0 h-full w-1/2   transform transition-all duration-500">
             <app-sidebar />
         </div>
     </div>
