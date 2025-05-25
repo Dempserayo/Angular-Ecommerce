@@ -1,75 +1,126 @@
 <div class="w-full h-full flex flex-row justify-center items-center gap-2">
 
 
-    <div class="w-64 h-screen  transition-all duration-500  shadow-2xl shadow-white flex flex-col border border-white  backdrop-blur-xl bg-white/80  text-black">
+    <div class="w-64 h-screen  transition-all duration-500  hover:shadow-2xl hover:shadow-white flex flex-col border border-white  backdrop-blur-xl bg-white/80  text-black">
         <!-- Dashboard pages -->
         <div class="block transition-all duration-500 w-full p-4">
             <!-- Filtros -->
             <div class="text-xs leading-tight tracking-tight mt-4">
-                        <h3 class="font-semibold px-2 py-1">Filtros</h3>
+                <h3 class="uppercase font-bold px-2 py-1 leading-tight tracking-tight">Filtros</h3>
                             
-                        <!-- Filtro por Precio -->
-                        <div class="p-2">
-                                <p class="font-medium mb-2">Precio</p>
+                <!-- Filtro por Precio -->
+                <div class="p-2">
+                                <p class="font-medium mb-2 leading-tight tracking-tight">Precio</p>
                                 <div class="flex flex-col gap-2">
                                     <div class="flex items-center gap-2">
                                         <input type="number" class="w-24 h-8 outline-none bg-transparent border px-2" placeholder="Min">
                                         <span>-</span>
                                         <input type="number" class="w-24 h-8 outline-none bg-transparent border px-2" placeholder="Max">
                                     </div>
-                                    <button class="w-full h-8 bg-blue-500 text-white  hover:bg-blue-600 transition-all duration-300">
+                                    <button class="w-full h-8 bg-blue-500 text-white  hover:bg-blue-600 transition-all duration-300 leading-tight tracking-tight">
                                         Aplicar
                                     </button>
                                 </div>
-                        </div>
+                </div>
 
-                        <!-- Filtro por Categoría -->
-                        <div class="p-2">
-                                <p class="font-medium mb-2">Categoría</p>
+                <!-- Filtro por Categoría -->
+                <div class="p-2">
+                                <p class="font-medium mb-2 leading-tight tracking-tight">Categoría</p>
                                 <div class="flex flex-col gap-1">
-                                    <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-100 p-1 rounded">
+                                    <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-100 p-1">
                                         <input type="checkbox" class="accent-blue-500">
-                                        <span>Anillos</span>
+                                        <span class="leading-tight tracking-tight">Anillos</span>
                                     </label>
-                                    <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-100 p-1 rounded">
+                                    <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-100 p-1">
                                         <input type="checkbox" class="accent-blue-500">
-                                        <span>Aretes</span>
+                                        <span class="leading-tight tracking-tight">Aretes</span>
                                     </label>
-                                    <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-100 p-1 rounded">
+                                    <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-100 p-1">
                                         <input type="checkbox" class="accent-blue-500">
-                                        <span>Cadenas</span>
+                                        <span class="leading-tight tracking-tight">Cadenas</span>
                                     </label>
-                                    <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-100 p-1 rounded">
+                                    <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-100 p-1">
                                         <input type="checkbox" class="accent-blue-500">
-                                        <span>Dijes</span>
+                                        <span class="leading-tight tracking-tight">Dijes</span>
                                     </label>
-                                    <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-100 p-1 rounded">
+                                    <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-100 p-1">
                                         <input type="checkbox" class="accent-blue-500">
-                                        <span>Pulseras</span>
+                                        <span class="leading-tight tracking-tight">Pulseras</span>
                                     </label>
-                                    <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-100 p-1 rounded">
+                                    <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-100 p-1">
                                         <input type="checkbox" class="accent-blue-500">
-                                        <span>Personalizado</span>
+                                        <span class="leading-tight tracking-tight">Personalizado</span>
                                     </label>
                                 </div>
-                        </div>
+                </div>
 
-                        <!-- Filtro por Fecha -->
-                        <div class="p-2">
-                                <p class="font-medium mb-2">Fecha de publicación</p>
+                <!-- Filtro por Fecha -->
+                <div class="p-2">
+                                <p class="font-medium mb-2  leading-tight tracking-tight">Fecha de publicación</p>
                                 <div class="flex flex-col gap-2">
-                                    <select class="w-full h-10 outline-none bg-transparent border px-2 cursor-pointer">
+                                    <select class="w-full h-10 outline-none bg-transparent border px-2 cursor-pointer  leading-tight tracking-tight">
                                         <option value="">Más recientes</option>
                                         <option value="">Última semana</option>
                                         <option value="">Último mes</option>
                                     </select>
                                 </div>
-                        </div>
+                </div>
+                
+                <!-- Filtro por Peso -->
+                <div class="p-2">
+                                <p class="font-medium mb-2  leading-tight tracking-tight">Seleccionar por peso</p>
+                                <div class="flex flex-col gap-2">
+                                    <select class="w-full h-10 outline-none bg-transparent border px-2 cursor-pointer  leading-tight tracking-tight">
+                                        <option value="">1.1</option>
+                                        <option value="">1.5</option>
+                                        <option value="">1.7</option>
+                                        <option value="">2</option>
+                                        <option value="">2.4</option>
+                                        <option value="">2.5</option>
+                                        <option value="">2.7</option>
+                                        <option value="">2.9</option>
+                                        <option value="">3</option>
+                                        <option value="">3.3</option>
+                                        <option value="">3.9</option>
+                                        <option value="">4.7</option>
+                                        <option value="">4.8</option>
+                                        <option value="">4.9</option>
+                                        <option value="">5.3</option>
+                                        <option value="">8.7</option>
+                                        <option value="">9.3</option>
+                                        <option value="">1.95</option>
+                                        <option value="">13.9</option>
+                                        <option value="">15.5</option>
+                                        <option value="">24.7</option>
+                                        <option value="">6.7</option>
+                                        <option value="">6.9</option>
+                                        <option value="">9.4</option>
+                                    </select>
+                                </div>
+                </div>
+          
+                <!-- Filtro por largo -->
+                <div class="p-2">
+                    <p class="font-medium mb-2  leading-tight tracking-tight">Seleccionar por largo</p>
+                    <div class="flex flex-col gap-2">
+                        <select class="w-full h-10 outline-none bg-transparent border px-2 cursor-pointer  leading-tight tracking-tight">
+                            <option value="">19 cm</option>
+                            <option value="">20 cm</option>
+                            <option value="">21 cm</option>
+                            <option value="">44 cm</option>
+                            <option value="">50 cm</option>
+                            <option value="">55 cm</option>
+                            <option value="">60 cm</option>
+                            <option value="">40 cm</option>
+                        </select>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 
-    <div class="w-full h-screen border border-gray-200"></div>
+    <div class="w-full h-screen backdrop-blur-xl bg-white/80 border border-gray-200"></div>
 
 
 </div>
