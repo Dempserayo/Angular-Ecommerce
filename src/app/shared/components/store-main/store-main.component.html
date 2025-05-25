@@ -1,0 +1,76 @@
+<div class="w-full h-full flex flex-row justify-center items-center gap-2">
+
+
+    <div class="w-64 h-screen  transition-all duration-500  shadow-2xl shadow-white flex flex-col border border-white  backdrop-blur-xl bg-white/80  text-black">
+        <!-- Dashboard pages -->
+        <div class="block transition-all duration-500 w-full p-4">
+            <!-- Filtros -->
+            <div class="text-xs leading-tight tracking-tight mt-4">
+                        <h3 class="font-semibold px-2 py-1">Filtros</h3>
+                            
+                        <!-- Filtro por Precio -->
+                        <div class="p-2">
+                                <p class="font-medium mb-2">Precio</p>
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex items-center gap-2">
+                                        <input type="number" class="w-24 h-8 outline-none bg-transparent border px-2" placeholder="Min">
+                                        <span>-</span>
+                                        <input type="number" class="w-24 h-8 outline-none bg-transparent border px-2" placeholder="Max">
+                                    </div>
+                                    <button class="w-full h-8 bg-blue-500 text-white  hover:bg-blue-600 transition-all duration-300">
+                                        Aplicar
+                                    </button>
+                                </div>
+                        </div>
+
+                        <!-- Filtro por Categoría -->
+                        <div class="p-2">
+                                <p class="font-medium mb-2">Categoría</p>
+                                <div class="flex flex-col gap-1">
+                                    <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-100 p-1 rounded">
+                                        <input type="checkbox" class="accent-blue-500">
+                                        <span>Anillos</span>
+                                    </label>
+                                    <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-100 p-1 rounded">
+                                        <input type="checkbox" class="accent-blue-500">
+                                        <span>Aretes</span>
+                                    </label>
+                                    <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-100 p-1 rounded">
+                                        <input type="checkbox" class="accent-blue-500">
+                                        <span>Cadenas</span>
+                                    </label>
+                                    <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-100 p-1 rounded">
+                                        <input type="checkbox" class="accent-blue-500">
+                                        <span>Dijes</span>
+                                    </label>
+                                    <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-100 p-1 rounded">
+                                        <input type="checkbox" class="accent-blue-500">
+                                        <span>Pulseras</span>
+                                    </label>
+                                    <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-100 p-1 rounded">
+                                        <input type="checkbox" class="accent-blue-500">
+                                        <span>Personalizado</span>
+                                    </label>
+                                </div>
+                        </div>
+
+                        <!-- Filtro por Fecha -->
+                        <div class="p-2">
+                                <p class="font-medium mb-2">Fecha de publicación</p>
+                                <div class="flex flex-col gap-2">
+                                    <select class="w-full h-10 outline-none bg-transparent border px-2 cursor-pointer">
+                                        <option value="">Más recientes</option>
+                                        <option value="">Última semana</option>
+                                        <option value="">Último mes</option>
+                                    </select>
+                                </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full h-screen border border-gray-200"></div>
+
+
+</div>
+
