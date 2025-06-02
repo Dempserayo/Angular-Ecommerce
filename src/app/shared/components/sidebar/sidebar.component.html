@@ -1,15 +1,13 @@
 <!-- Sidebar Content -->
 <div class="w-full h-full p-4 flex flex-col gap-4 bg-white shadow-2xl shadow-white">
-    <div class="w-full h-20 flex justify-end items-center">
-        <button (click)="toggleSidebar()" class="w-10 h-10 flex justify-center items-center cursor-pointer text-end border border-gray-200 text-gray-200 hover:bg-red-500 hover:shadow-2xl hover:shadow-red-500 hover:text-white transition-all duration-500">
-            <mat-icon>close</mat-icon>
-        </button>
-    </div>
-
     <!-- Imagen  -->
     <div class="w-full h-20 flex justify-center items-center">
-        <img src="assets/logo.png" alt="logo" class="w-60  bg-cover bg-center">
-        
+        <div class="w-full flex justify-center">
+            <img src="assets/logo.png" alt="logo" class="w-60  bg-cover bg-center">
+        </div>
+        <button (click)="toggleSidebar()" class="w-10 h-10 flex justify-center items-center cursor-pointer text-end text-gray-200 hover:bg-red-500 hover:shadow-2xl hover:shadow-red-500 hover:text-white transition-all duration-500">
+            <mat-icon>close</mat-icon>
+        </button>
     </div>
     
     
@@ -19,26 +17,17 @@
         <div class="w-full h-40 flex flex-row justify-start p-4 gap-4">
            <!-- Imagen del Usuario  -->
             <div class="w-auto h-full flex  justify-center items-center "> 
-                <button class="w-24 h-24 border rounded-full flex justify-center items-center">
-                    <mat-icon >person</mat-icon>
+                <button class="w-24 h-24 border border-gray-200 rounded-full flex justify-center items-center">
+                    <mat-icon style="color: gray;">person</mat-icon>
                 </button>
             </div>
 
             <!-- Informacion del Usuario -->
-            <div class="w-full h-full border p-4"> 
+            <div class="w-full h-full border border-gray-200 p-4"> 
                 <p class="text-xs font-bold uppercase tracking-tight leading-tight text-gray-400">Usuario</p>
             </div>
         </div>
-     
-        <!-- Productos  -->
-        <div class="w-full h-20 flex justify-start items-center border border-gray-200 p-4">
-           <h1 class="text-xs font-bold uppercase tracking-tight leading-tight text-gray-400">Mis Productos</h1>
-        </div>
-     
-        <!-- Productos  -->
-        <div class="w-full h-20 flex justify-start items-center border border-gray-200 p-4">
-           <h1 class="text-xs font-bold uppercase tracking-tight leading-tight text-gray-400">Mis Productos</h1>
-        </div>
+  
     </div>
 
 
